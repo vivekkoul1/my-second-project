@@ -1,0 +1,278 @@
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+h1, h2{
+    margin: 0px;
+}
+.background{
+    background-image: url(background.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    position: fixed;
+}
+.section-2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#head{
+    color: rgb(255, 255, 255);
+    z-index: 20;
+    text-align: center;
+    font-size: 8vh;
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-decoration: underline rgba(0, 255, 0, 0.795);
+}
+.container{
+    border: rgb(255, 255, 255) solid 4px;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+.burger:hover{
+    transform: scale(1.6);
+    z-index: 30;
+}
+.sandwich:hover{
+    transform: scale(1.6);
+    z-index: 30;
+}
+.noodles:hover{
+    transform: scale(1.6);
+    z-index: 30;
+}
+.samosa:hover{
+    transform: scale(1.6);
+    z-index: 30;
+}
+.images img:hover{
+    animation: shake 0.5s;
+}
+@keyframes shake  {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.para{
+    width: 50%;
+    /* top: 50%;
+    left: 50%; */
+    position: absolute ; 
+    text-align: center;
+    /* margin: auto; */
+    left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  top: 35%;
+    /* transform: translate(-50%, -50%); */
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3em; 
+    font-weight: 1000; 
+    color: rgb(255, 0, 0);
+    z-index: 10;   
+    animation: mypara 2s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+@keyframes mypara{
+    10%, 30%, 50%, 70%, 90% {opacity: 1; transform: translateY(0);}
+    0%{ transform: translateY(-1000px);}
+    20%{ transform: translateY(-20px);}
+    40%{ transform: translateY(-10px);}
+    60%{ transform: translateY(-5px);}
+    80%{ transform: translateY(-2px);}
+    100%{opacity: 1;  transform: translateY(0); }
+}
+.burger{
+    width: 40%;
+    height: 40%;
+    z-index: 5;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 3%;
+    animation: appear 2s;
+    animation-delay: 2.1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.sandwich{
+    width: 40%;
+    height: 40%;
+    right: 0px;
+    z-index: 5;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden; 
+    right: 1%;
+    animation: appear 2s;
+    animation-delay: 2.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.noodles{
+    width: 40%;
+    height: 40%;
+    right: 0px;
+    z-index: 5;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom: 1%;
+    right: 1%;
+    animation: appear 2s;
+    animation-delay: 2.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+} 
+.samosa{
+    width: 55%;
+    height: 55%;
+    right: 0px;
+    z-index: 5;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom: -1%;
+    left: -5%;
+    animation: appear 2s;
+    animation-delay: 2.7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    /* transition-duration: 1ms; */
+}
+@keyframes appear{ 
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+} 
+.homebutton{
+    position: fixed;
+    padding: 2vw 3vw;
+    z-index: 30;
+    background: rgba(0, 0, 0, 0.61);
+    opacity: 0.7;
+    right: 2.5vw;
+    bottom: 30px;
+    font-size: 2vw;
+    font-family: fantasy;
+    color: rgba(0, 255, 0, 0.795);
+    border-radius: 50%;
+    border: rgba(0, 255, 0, 0.795) 4px solid;
+}
+.homebutton:hover{
+    color: rgb(0, 132, 255);
+    /* border: rgb(0, 132, 255) 4px solid; */
+    /* transform: rotateY(360deg) */
+}
+.homebutton:active{
+    color: red;
+    border: red 4px solid;
+}
+.item{
+    height: 100%;
+    width: 100%;
+}
+.subheading{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.container2{
+    border:cornsilk solid 5px ;
+    width: 70%;
+    height: 70%;            
+    position: relative;
+    left: 5%;
+    color: white;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+}
+table{
+    width: 100%;
+    border-spacing: 20px;
+}
+.table-heading{
+    font-size: 25px;  
+    /* margin-bottom: 20px; */
+    /* line-height: 60px; */
+    background: rgb(0, 0, 0);
+}
+td{
+    padding: 10px 15px;
+    /* border: solid white 1px; */
+    text-align: center;
+    width: 100px;
+    font-size: 17px;
+    /* color: green; */
+}
+.endsection{
+    height: 45%;
+}
+.about-us{
+    
+        position: fixed;
+        padding: 2vw 3vw;
+        z-index: 30;
+        background: rgba(0, 0, 0, 0.61);
+        opacity: 0.7;
+        right: 2.5vw;
+        top: 50%;
+        font-size: 2vw;
+        font-family: fantasy;
+        color: rgba(0, 255, 0, 0.795);
+        border-radius: 50%;
+        border: rgba(0, 255, 0, 0.795) 4px solid;   
+}
+.about-us:hover{
+    color: rgb(0, 132, 255);
+    /* border: rgb(0, 132, 255) 4px solid; */
+    /* transform: rotateY(360deg) */
+}
+.about-us:active{
+    color: red;
+    border: red 4px solid;
+}
+hr{
+    width: 70%;
+    border: 1px grey solid;
+    margin-bottom: 30px;
+}
+.email-link{
+    color: rgb(85, 82, 128);
+}
+.email-link:hover{
+    color: rgb(158, 83, 83);
+}
+.footer-text{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 1, 1);
+    font-size: 13px;
+}
+footer{
+    width: 50%;
+    padding-top: 30px;
+}
